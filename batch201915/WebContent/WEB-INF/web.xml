@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+
+	<servlet>
+		<servlet-name>first</servlet-name>
+		<servlet-class>net.antra.servlet.FirstServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>first</servlet-name>
+		<url-pattern>/fs</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>second</servlet-name>
+		<servlet-class>net.antra.servlet.SecondServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>second</servlet-name>
+		<url-pattern>/ss</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>student</servlet-name>
+		<servlet-class>net.antra.servlet.StudentServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>student</servlet-name>
+		<url-pattern>/stu</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>cook</servlet-name>
+		<servlet-class>net.antra.servlet.CookieEx</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>cook</servlet-name>
+		<url-pattern>/ck</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>session</servlet-name>
+		<servlet-class>net.antra.servlet.SessionEx</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>session</servlet-name>
+		<url-pattern>/se</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>third</servlet-name>
+		<servlet-class>net.antra.servlet.ThirdServlet</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>third</servlet-name>
+		<url-pattern>/ts</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+		<filter-name>filt</filter-name>
+		<filter-class>net.antra.servlet.FilterEx</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>filt</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	
+	
+</web-app>
