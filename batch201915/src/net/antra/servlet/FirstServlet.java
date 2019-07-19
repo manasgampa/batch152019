@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 public class FirstServlet extends HttpServlet{
 
 	public void init() {
-		System.out.println("in init method");
+		System.out.println("in init method of first servlet");
 	}
 	public void service(HttpServletRequest request,HttpServletResponse response) throws IOException {
 		
